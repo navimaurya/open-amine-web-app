@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Open Anime | Discover the World of Animation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes bounceIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.3);
+      }
+      50% {
+        opacity: 1;
+        transform: scale(1.05);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .bounce-in {
+      animation: bounceIn 0.8s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .fade-in {
+      animation: fadeIn 1.5s ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-blue-100 text-gray-800 font-sans leading-normal tracking-normal">
+
+  <!-- Header -->
+  <header class="bg-sky-500 shadow-lg py-6">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-4xl font-bold text-white bounce-in">Open Anime</h1>
+      <nav>
+        <ul class="flex space-x-4 text-lg">
+          <li><a href="#" class="hover:text-white text-gray-200 transition duration-300">Home</a></li>
+          <li><a href="#" class="hover:text-white text-gray-200 transition duration-300">About</a></li>
+          <li><a href="#" class="hover:text-white text-gray-200 transition duration-300">Services</a></li>
+          <li><a href="#" class="hover:text-white text-gray-200 transition duration-300">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative bg-cover bg-center h-screen" style="background-image: url('https://via.placeholder.com/1920x1080/87CEEB/FFFFFF');">
+    <div class="absolute inset-0 bg-blue-300 bg-opacity-50 flex justify-center items-center">
+      <div class="text-center">
+        <h2 class="text-6xl font-extrabold text-white drop-shadow-lg fade-in">Discover the World of Anime</h2>
+        <p class="mt-4 text-xl text-white fade-in delay-500">At Open Anime, we create and share unforgettable stories through animation. Step into a world where creativity knows no bounds!</p>
+        <a href="#" class="mt-8 inline-block bg-white text-sky-600 text-lg font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-sky-500 hover:text-white transition-all duration-300 fade-in delay-700">
+          Learn More
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="bg-blue-50 py-20 fade-in">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold text-sky-600">About Us</h2>
+      <p class="text-lg text-gray-700 mt-4 max-w-2xl mx-auto">Open Anime is dedicated to bringing you the finest in anime production. From concept development to final rendering, we are passionate about crafting compelling and visually stunning narratives for audiences worldwide.</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="bg-blue-100 py-20">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center fade-in">
+      <div class="bg-white p-10 rounded-lg shadow-md hover:scale-105 transform transition-transform duration-500">
+        <h3 class="text-2xl font-bold text-sky-600">Concept Development</h3>
+        <p class="text-gray-600 mt-4">We turn your ideas into stories, ready for animation production.</p>
+      </div>
+      <div class="bg-white p-10 rounded-lg shadow-md hover:scale-105 transform transition-transform duration-500">
+        <h3 class="text-2xl font-bold text-sky-600">Animation Production</h3>
+        <p class="text-gray-600 mt-4">Our animators bring your vision to life with captivating visuals.</p>
+      </div>
+      <div class="bg-white p-10 rounded-lg shadow-md hover:scale-105 transform transition-transform duration-500">
+        <h3 class="text-2xl font-bold text-sky-600">Global Distribution</h3>
+        <p class="text-gray-600 mt-4">We ensure your anime reaches fans around the world on all platforms.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-sky-500 py-6">
+    <div class="container mx-auto text-center">
+      <p class="text-white">© 2024 Open Anime. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+
